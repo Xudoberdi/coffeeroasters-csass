@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    flex-direction: column;
+    display: flex;
+    background-color:#fff ;
+    height: 100%;
+}
+
+.container {
+    width: min(100%, 1320px);
+    padding: 0 2rem;
+    margin: 0 auto;
+    @include responsive(phone) {
+        padding: 0 1rem;
+    }
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.main {
+    flex-grow: 1;
+}
+a{
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}

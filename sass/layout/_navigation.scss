@@ -1,0 +1,74 @@
+.header__container{
+  padding: 0 2.4rem;
+}
+
+  .hidden {
+     @include responsive(phone){
+
+      display: none;
+     }
+      
+    }
+  
+ 
+.sitenav{
+
+  @include responsive(phone){
+    display: none;
+  position: absolute;
+      top: 9rem;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      height: 80vh;
+      padding-top: 4rem;
+      background: #fff;
+}
+}
+
+.sitenav__list {
+    display: flex;
+    
+ @include responsive(phone){
+  flex-direction: column;
+ }
+  }
+  .sitenav__item:not(:last-child) {
+    margin-right: 3.3rem;
+  }
+  
+  .sitenav__link {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: $gray-color;
+  font-family: $text-fonts;
+
+
+  @include responsive(phone){
+    font-size: 2.4rem;
+    font-family: $title-fonts;
+    text-transform: capitalize;
+    color: $secondary-color;
+
+  }
+  &:hover{
+    color: $secondary-color;
+  }
+
+  }
+
+  .toggele-btn {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    @include responsive(phone){
+      display: block;
+  
+  }
+  }
+  .toggle-btn__image {
+    width: 15px;
+    height: 15px;
+  }
