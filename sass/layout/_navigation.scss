@@ -5,11 +5,13 @@
   .hidden {
      @include responsive(phone){
 
-      display: none;
+      display: block;
      }
       
     }
-  
+  .sitenav.open {
+    display: block;
+  }
  
 .sitenav{
 
@@ -35,6 +37,7 @@
   }
   .sitenav__item:not(:last-child) {
     margin-right: 3.3rem;
+    margin-bottom: 5rem;
   }
   
   .sitenav__link {

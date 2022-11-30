@@ -89,8 +89,12 @@ ul, ol {
 
 @media only screen and (max-width: 679px) {
   .hidden {
-    display: none;
+    display: block;
   }
+}
+
+.sitenav.open {
+  display: block;
 }
 
 @media only screen and (max-width: 679px) {
@@ -118,6 +122,7 @@ ul, ol {
 
 .sitenav__item:not(:last-child) {
   margin-right: 3.3rem;
+  margin-bottom: 5rem;
 }
 
 .sitenav__link {
