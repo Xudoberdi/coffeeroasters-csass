@@ -1,9 +1,9 @@
 /* MAIN */
 .main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
-  .hero{
-      padding-bottom: 10rem; 
+.hero {
+  padding-bottom: 10rem;
   &__wrapper {
     background: url("../images/hero-bg.jpg");
     background-repeat: no-repeat;
@@ -11,50 +11,47 @@
     background-position: center;
     padding: 11.6rem 8.5rem;
     border-radius: 10px;
-    @include responsive(phone){
-        text-align: center;
-        padding: 10rem 2.4rem 11.5rem;
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    @include responsive(phone) {
+      text-align: center;
+      padding: 10rem 2.4rem 11.5rem;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url("../images/hero-bg.jpg");
       background-position: center right 40%;
-     
     }
   }
-  
- 
+
   &__info {
-    width: 493px; 
-     @include responsive(phone){
-        width: 100%;
+    width: 493px;
+    @include responsive(phone) {
+      width: 100%;
     }
   }
   &__title {
     color: $ligh-cream-bg-color;
-    font-family:$title-fonts ;
+    font-family: $title-fonts;
     font-size: 7.2rem;
     line-height: 1;
     margin-bottom: 3.2rem;
     font-weight: 900;
-    @include responsive(phone){
-        text-align: center;
-        font-size: 4rem;
+    @include responsive(phone) {
+      text-align: center;
+      font-size: 4rem;
     }
-    
   }
   &__text-wrapper {
     width: 440px;
-    @include responsive(phone){
-        width: 100%;
+    @include responsive(phone) {
+      width: 100%;
     }
   }
-  
+
   &__text {
     color: $ligh-cream-bg-color;
     margin-bottom: 5.6rem;
-    @include responsive(phone){
-        text-align: center;
-        mix-blend-mode: normal;
-        opacity: 0.8;
+    @include responsive(phone) {
+      text-align: center;
+      mix-blend-mode: normal;
+      opacity: 0.8;
     }
   }
   &__btn:hover {
@@ -64,10 +61,8 @@
 
 /* COLLECTION */
 .collection {
-    padding-bottom: 9rem;
- 
-  
-  
+  padding-bottom: 9rem;
+
   &__wrapper {
     background-image: url(../images/png/ourcollection.png);
     background-size: contain;
@@ -75,24 +70,21 @@
     padding-top: 14.6rem;
     padding-left: 8.5rem;
     padding-right: 8.5rem;
-    @include responsive( phone){
-        padding-top: 14.6rem;
-        padding-left: 4.5rem;
-        padding-right: 4.5rem;
-
+    @include responsive(phone) {
+      padding-top: 14.6rem;
+      padding-left: 4.5rem;
+      padding-right: 4.5rem;
     }
   }
   &__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25.5rem, 1fr));
     gap: 3rem;
-    @include responsive(m-table){
-     grid-template-columns: repeat(auto-fit, minmax(57.5rem, 1fr));
-
+    @include responsive(m-table) {
+      grid-template-columns: repeat(auto-fit, minmax(57.5rem, 1fr));
     }
-    @include responsive( phone){
-        grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
-
+    @include responsive(phone) {
+      grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
     }
   }
   &__item {
@@ -100,99 +92,92 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    @include responsive(m-table){
+    @include responsive(m-table) {
       flex-direction: row;
       gap: 3rem;
       align-items: flex-start;
     }
-    @include responsive( phone){
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
+    @include responsive(phone) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
-   
-   }
+  }
   &__wrap {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
-    @include responsive (m-table){
-   align-items: inherit;
-          }
+    @include responsive(m-table) {
+      align-items: inherit;
+    }
 
-          @include responsive( phone){
-            justify-content: center;
-
-        }
+    @include responsive(phone) {
+      justify-content: center;
+    }
   }
   &__pic {
     width: 100%;
     height: auto;
     margin-bottom: 7rem;
-    @include responsive (m-table){
-        width: 255px;
-        height: 193px;
+    @include responsive(m-table) {
+      width: 255px;
+      height: 193px;
     }
-    @include responsive( phone){
-        width: 100%;
-        height: auto;
-        margin-bottom: 7rem;
-
+    @include responsive(phone) {
+      width: 100%;
+      height: auto;
+      margin-bottom: 7rem;
     }
   }
   &__item-title {
     color: $secondary-color;
-    font-family:$title-fonts;
+    font-family: $title-fonts;
     font-weight: 900;
-    font: size 2.4rem; ;
+    font: size 2.4rem;
     line-height: 1.33;
     margin-bottom: 2.4rem;
   }
   &__item-text {
     text-align: center;
-    color:  $secondary-color;
+    color: $secondary-color;
     font-family: $text-fonts;
     font-size: 1.6rem;
     line-height: 1.62;
     font-weight: 400;
 
-    @include responsive (m-table){
-        text-align: left;
-
+    @include responsive(m-table) {
+      text-align: left;
     }
-    @include responsive( phone){
-        text-align: center;
-
+    @include responsive(phone) {
+      text-align: center;
     }
   }
 }
 
 /* CHOOSE */
 .choose {
-    padding-top: 8rem;
- 
- 
- &__background {
+  padding-top: 8rem;
+
+  &__background {
     background-color: $choose-bg;
-    padding: 11rem 37rem 31.7rem;
+    padding: 11rem 37rem 30.7rem;
     border-radius: 10px;
 
-    @include responsive(table){
-        padding: 10rem 10rem 31.7rem;
+    @include responsive(table) {
+      padding: 10rem 10rem 31.7rem;
     }
-    @include responsive(m-table){
-        padding: 7.1rem 7.4rem 12.7rem;
+    @include responsive(m-table) {
+      padding: 7.1rem 7.4rem 35.7rem;
     }
-    @include responsive(phone){
-       padding: 6.4rem 2.4rem 68.9rem;
+    @include responsive(phone) {
+      padding: 6.4rem 2.4rem 68.9rem;
       border-radius: 10px;
     }
   }
- &__tittle {
+  &__tittle {
     text-align: center;
     color: $ligh-cream-bg-color;
     font-family: $title-fonts;
@@ -200,14 +185,14 @@
     font-size: 4rem;
     line-height: 1.2;
     margin-bottom: 3.2rem;
-    @include responsive(phone){
+    @include responsive(phone) {
       font-size: 2.8rem;
       line-height: 1.33;
       margin-bottom: 3.2rem;
-          opacity: none;
+      opacity: none;
     }
   }
- &__info {
+  &__info {
     text-align: center;
     color: $ligh-cream-bg-color;
     font-family: $text-fonts;
@@ -215,7 +200,7 @@
     line-height: 1.62;
     font-weight: 400;
   }
- &__list {
+  &__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     gap: 3rem;
@@ -224,29 +209,27 @@
     position: relative;
     top: -20rem;
 
-    @include responsive(m-table){
-        padding-left: 5.8rem;
-        padding-right: 5.8rem;
-        top: -7rem;
+    @include responsive(m-table) {
+      padding-left: 5.8rem;
+      padding-right: 5.8rem;
+      top: -30rem;
     }
-    @include responsive(phone){
+    @include responsive(phone) {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(15.9rem, 1fr));
       gap: 3rem;
       position: relative;
-      top: -45rem;
+      top: -60rem;
       padding-right: 1.4rem;
       padding-left: 1.4rem;
     }
   }
- &__wrapper {
+  &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-  
   }
- &__item {
+  &__item {
     padding: 8.3rem 4.7rem 4.8rem;
     border-radius: 8px;
     background-color: $primary-color;
@@ -254,46 +237,49 @@
     flex-direction: column;
     align-items: center;
 
-    @include responsive(m-table){
-        padding: 4.1rem 4.8rem 4.1rem 7rem;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 5rem; 
+    @include responsive(m-table) {
+      padding: 4.1rem 4.8rem 4.1rem 7rem;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 5rem;
     }
-    @include responsive(phone){
+    @include responsive(phone) {
       padding: 7.2rem 1.1rem 5.1rem;
       border-radius: 8px;
-         display: flex;
+      display: flex;
       flex-direction: column;
       align-items: center;
       gap: 0;
     }
   }
- &__item-icon {
+  &__item-icon {
     margin-bottom: 5.6rem;
     width: 7.2rem;
     height: 7.2rem;
 
-    @include responsive(m-table){
-        padding-top: 3rem;
+    @include responsive(m-table) {
+      width: 7.2rem;
+      height: 7.2rem;
     }
-    @include responsive(phone){
+    @include responsive(phone) {
       margin-bottom: 5.6rem;
+      width: 7.2rem;
+      height: 7.2rem;
     }
   }
- &__item-title {
-    color:$ligh-cream-bg-color;
+  &__item-title {
+    color: $ligh-cream-bg-color;
     font-family: $title-fonts;
     font-weight: 900;
     font-size: 2.4rem;
     line-height: 1.33;
     margin-bottom: 2.4rem;
   }
- &__item-info {
+  &__item-info {
     text-align: center;
-    color:$ligh-cream-bg-color;
-    font-family:$text-fonts;
+    color: $ligh-cream-bg-color;
+    font-family: $text-fonts;
     font-size: 1.6rem;
     line-height: 1.62;
     font-weight: 400;
@@ -303,164 +289,161 @@
 // WORKS
 .works {
   padding-bottom: 10rem;
-  @include responsive(table){
+  @include responsive(table) {
     padding-bottom: 0rem;
     position: relative;
     top: -4rem;
   }
-  @include responsive(phone){
-       position: relative;
-    top: -30rem;
+  @include responsive(phone) {
+    position: relative;
+    top: -40rem;
   }
 
-&__container {
-  padding-left: 8.5rem;
-  
-  @include responsive(table){
-    position: relative;
-    padding-left: 4rem;
-    padding-right: 4rem;
+  &__container {
+    padding-left: 8.5rem;
+
+    @include responsive(table) {
+      position: relative;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+    @include responsive(phone) {
+      padding-left: 0;
+      padding-left: 2.4rem;
+      padding-right: 2.4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
-  @include responsive(phone){
-    padding-left: 0;
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
+  &__title {
+    font-family: $title-fonts;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 1.33;
+    color: $gray-color;
+    margin-bottom: 8rem;
+    @include responsive(phone) {
+      text-align: center;
+    }
+  }
+  &__line {
+    height: 2px;
+    width: 63%;
+    background: $pale-orange-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9rem;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 9.5rem;
+    margin-bottom: 6.4rem;
+    padding-right: 15rem;
+    @include responsive(table) {
+      padding-right: 0;
+      padding-left: 0;
+      gap: 1rem;
+    }
+    @include responsive(phone) {
+      gap: 5.5rem;
+      margin-bottom: 6.4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(15.9rem, 1fr));
+    }
+  }
+  &__item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-&__title {
-  font-family: $title-fonts;
-  font-weight: 900;
-  font-size: 2.4rem;
-  line-height: 1.33;
-  color: $gray-color;
-  margin-bottom: 8rem;
-  @include responsive(phone){
-    text-align: center;
-  }
-}
-&__line {
-  height: 2px;
-  width: 63%;
-  background: $pale-orange-color;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 9rem;
-}
-&__list {
-  display: flex;
-  flex-direction: row;
-  gap: 9.5rem;
-  margin-bottom: 6.4rem;
-  padding-right: 15rem;
-  @include responsive(table){
-       padding-right: 0;
-    padding-left: 0;
-    gap: 1rem;
- 
-  }
-  @include responsive(phone){
-    gap: 5.5rem;
-    margin-bottom: 6.4rem;
-        display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15.9rem, 1fr));
-  }
-}
-&__item {
-  display: flex;
-  flex-direction: column;
-  width: 28.5rem;
-  @include responsive(table){
-    width: 22.3rem;
-  }
-  @include responsive(phone){
+    width: 28.5rem;
+    @include responsive(table) {
+      width: 22.3rem;
+    }
+    @include responsive(phone) {
       width: 100%;
+    }
   }
-}
-&__circle {
-  background: $ligh-cream-bg-color;
-  border: 2px solid #0e8784;
-  height: 31px;
-  width: 31px;
-  display: block;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  margin-bottom: 6.7rem;
-  position: relative;
-  top: 3.3rem;
-  @include responsive(phone){
-    display: none;
+  &__circle {
+    background: $ligh-cream-bg-color;
+    border: 2px solid #0e8784;
+    height: 31px;
+    width: 31px;
+    display: block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 6.7rem;
+    position: relative;
+    top: 3.3rem;
+    @include responsive(phone) {
+      display: none;
+    }
   }
-
-}
-&__item-number {
-  font-family: $title-fonts;
-  font-size: 7.2rem;
-  font-weight: 900;
-  line-height: 1;
-  color: $pale-orange-color;
-  margin-bottom: 3.8rem;
-  @include responsive(phone){
-    text-align: center;
+  &__item-number {
+    font-family: $title-fonts;
     font-size: 7.2rem;
+    font-weight: 900;
+    line-height: 1;
+    color: $pale-orange-color;
+    margin-bottom: 3.8rem;
+    @include responsive(phone) {
+      text-align: center;
+      font-size: 7.2rem;
+    }
   }
-
-}
-&__item-title {
-  font-family: $title-fonts;
-  font-weight: 900;
-  font-size: 3.2rem;
-  line-height: 1.12;
-  color: $secondary-color;
-  text-align: left;
-  padding-right: 4rem;
-  margin-bottom: 4.2rem;
-  @include responsive(table){
-    font-size: 2.8rem;
-    line-height: 1.14;
-    padding-right: 0;
+  &__item-title {
+    font-family: $title-fonts;
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 1.12;
+    color: $secondary-color;
+    text-align: left;
+    padding-right: 4rem;
+    margin-bottom: 4.2rem;
+    @include responsive(table) {
+      font-size: 2.8rem;
+      line-height: 1.14;
+      padding-right: 0;
+    }
+    @include responsive(phone) {
+      text-align: center;
+    }
   }
-  @include responsive(phone){
+  &__item-subtitle {
+    text-align: left;
+    color: $secondary-color;
+    font-family: $text-fonts;
+    font-size: 1.6rem;
+    line-height: 1.62;
+    font-weight: 400;
+    @include responsive(table) {
+      font-size: 1.5rem;
+      line-height: 1.67;
+    }
+    @include responsive(phone) {
+      text-align: center;
+    }
+  }
+  &__line {
+    @include responsive(table) {
+      width: 69%;
+    }
+    @include responsive(m-table) {
+      width: 73%;
+    }
+    @include responsive(phone) {
+      display: none;
+    }
+  }
+  &__btn {
     text-align: center;
   }
-}
-&__item-subtitle {
-  text-align: left;
-  color: $secondary-color;
-  font-family: $text-fonts;
-  font-size: 1.6rem;
-  line-height:1.62 ;
-  font-weight: 400;
-  @include responsive(table){
-    font-size: 1.5rem;
-    line-height: 1.67;
+  &__btn:hover {
+    background-color: $main-btn-hover-color;
   }
-  @include responsive(phone){
-    text-align: center;
-  }
-}
-&__line{
-  @include responsive(table){
-    width: 69%;
-  }
-  @include responsive(m-table){
-    width: 73%;
-  }
-  @include responsive(phone){
-    display: none;
-  }
-}
-&__btn{
-  text-align: center;
-}
-&__btn:hover {
-  background-color: $main-btn-hover-color;
-}
 }

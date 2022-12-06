@@ -1,0 +1,316 @@
+.about {
+  margin-bottom: 10rem;
+  .container {
+    @include responsive(phone) {
+      padding: 0 2.4rem;
+    }
+  }
+  &__container {
+    background-image: url(../images/jpg/cup-coffee.png);
+    border-radius: 10px;
+    width: 100%;
+    @include responsive(table) {
+      background-position: center right 70%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    @include responsive(m-phone) {
+      background-position: center right 45%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &__group {
+    padding : {
+      top: 13.7rem;
+      left: 8.5rem;
+      bottom: 13.7rem;
+    }
+    @include responsive(phone) {
+      padding : {
+        top: 11.1rem;
+        left: 8.5rem;
+        bottom: 8.7rem;
+        right: 8.5rem;
+      }
+    }
+    @include responsive(m-phone) {
+      padding : {
+        top: 11.1rem;
+        left: 2.5rem;
+        bottom: 8.7rem;
+        right: 2.5rem;
+      }
+    }
+  }
+  &__group-title {
+    font-family: $title-fonts;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 1.2;
+    color: #fefcf7;
+    margin: 0;
+    @include responsive(phone) {
+      text-align: center;
+      font-size: 2.8rem;
+      line-height: 1;
+    }
+  }
+  &__group-subtitle {
+    font-family: $text-fonts;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.62;
+    color: #fefcf7;
+
+    width: 44.5rem;
+    margin-top: 2.4rem;
+    @include responsive(phone) {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+.about-hero {
+  padding-top: 3rem;
+
+  .container {
+    padding-left: 8.5rem;
+    @include responsive(table) {
+      padding-left: 4rem;
+    }
+    @include responsive(phone) {
+      padding: 0 2.4rem;
+    }
+  }
+  &__container {
+    padding-top: 16rem;
+    display: flex;
+    align-items: center;
+    gap: 12.5rem;
+    @include responsive(table) {
+      gap: 8rem;
+    }
+    @include responsive(phone) {
+      flex-direction: column;
+    }
+  }
+  &__pic {
+    border-radius: 8px;
+    height: auto;
+    width: 60%;
+    @include responsive(table) {
+      width: 45%;
+      height: 470px;
+      border-radius: 8px;
+    }
+    @include responsive(phone) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    @include responsive(phone) {
+    }
+  }
+  &__group-title {
+    font-family: $title-fonts;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 1.2;
+    margin: 0;
+
+    @include responsive(table) {
+      font-size: 3.2rem;
+      line-height: 1;
+    }
+    @include responsive(phone) {
+      text-align: center;
+    }
+  }
+  &__group-subtitle {
+    font-family: $text-fonts;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.62;
+    color: #333d4b;
+    opacity: 0.8;
+    margin-top: 3rem;
+    padding-right: 13.5rem;
+    @include responsive(desktop) {
+      padding-right: 10.5rem;
+    }
+    @include responsive(table) {
+      padding-right: 0;
+      font-size: 1.5rem;
+    }
+    @include responsive(phone) {
+      text-align: center;
+    }
+  }
+}
+
+.coffee {
+  padding-top: 24rem;
+  .container {
+    padding: 0 2.4rem;
+    @include responsive(table) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__container {
+    display: flex;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    background: #2c343e;
+    gap: 10rem;
+    position: relative;
+    @include responsive(table) {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+    }
+  }
+  &__group {
+    padding-top: 95px;
+    padding-left: 85px;
+    @include responsive(table) {
+      padding-top: 0rem;
+      padding-bottom: 7rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0;
+    }
+  }
+  &__group-title {
+    font-family: $title-fonts;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 1.2;
+    color: #fefcf7;
+    margin: 0;
+    @include responsive(table) {
+      text-align: center;
+      font-size: 28px;
+      line-height: 1;
+    }
+  }
+  &__group-info {
+    margin-top: 3.2rem;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.62;
+    color: #fefcf7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    width: 80%;
+    @include responsive(table) {
+      text-align: center;
+    }
+  }
+  &__pic {
+    height: 474px;
+    width: 445px;
+    border-radius: 8px;
+    position: relative;
+    bottom: 10rem;
+    right: 10rem;
+    @include responsive(table) {
+      height: 320px;
+      width: 573px;
+      border-radius: 8px;
+      bottom: 10rem;
+      right: 0;
+    }
+    @include responsive(phone) {
+      height: 276px;
+      width: 399px;
+    }
+    @include responsive(m-phone) {
+      height: 156px;
+      width: 279px;
+      bottom: 7rem;
+    }
+  }
+}
+.country {
+  padding-top: 16rem;
+  padding-bottom: 12rem;
+}
+.container {
+}
+.country__container {
+}
+.country__title {
+  font-family: $title-fonts;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #83888f;
+  margin-bottom: 7rem;
+  @include responsive(phone) {
+    text-align: center;
+  }
+}
+.country__list {
+  width: 100%;
+  display: grid;
+  gap: 7rem;
+  grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
+  @include responsive(table) {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  }
+  @include responsive(phone) {
+    gap: 8rem;
+  }
+}
+.country-item {
+  display: block;
+  @include responsive(phone) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.country-item-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5rem;
+}
+.country-item-title {
+  font-family: $title-fonts;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 1.12;
+  margin-bottom: 2rem;
+  color: #333d4b;
+  @include responsive(table) {
+    font-size: 2.4rem;
+  }
+}
+.country-item-subtitle {
+  line-height: 1.67;
+  @include responsive(phone) {
+    text-align: center;
+  }
+}

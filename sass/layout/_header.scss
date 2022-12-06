@@ -1,10 +1,33 @@
 .header {
-    padding-top: 4.4rem;
-    padding-bottom: 4.4rem;
+  padding-top: 4.4rem;
+  padding-bottom: 4.4rem;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .sitenav {
+    @include responsive(phone) {
+      height: 40vh;
+      background: linear-gradient(
+        360deg,
+        rgba(254, 252, 247, 0.504981) 0%,
+        #fefcf7 55.94%
+      );
+    }
   }
-  
-  .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .sitenav__item:not(:last-child) {
+    margin: 0;
+    margin-right: 3.3rem;
+
+    @include responsive(phone) {
+      margin-bottom: 5rem;
+    }
   }
+}
