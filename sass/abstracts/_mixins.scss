@@ -1,20 +1,28 @@
-
-
 // Media Queries
 @mixin responsive($breackpoint) {
-    @if $breackpoint == desktop {
-        @media only screen and (max-width: 1200px) { @content }
-    };
-    @if $breackpoint == table {
-        @media only screen and (max-width: 992px) { @content }
-    };
-    @if $breackpoint == m-table  {
-        @media only screen and (max-width: 768px) { @content }
-    };
-    @if $breackpoint == phone {
-        @media only screen and (max-width: 679px) { @content }
-    };
-    @if $breackpoint == m-phone {
-        @media only screen and (max-width: 390px) { @content }
-    };
+  @if $breackpoint == desktop {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breackpoint == table {
+    @media only screen and (max-width: 992px) {
+      @content;
+    }
+  }
+  @if $breackpoint == m-table {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breackpoint == phone {
+    @media only screen and (max-width: 699px) {
+      @content;
+    }
+  }
+  @if $breackpoint == m-phone {
+    @media only screen and (max-width: 390px) {
+      @content;
+    }
+  }
 }

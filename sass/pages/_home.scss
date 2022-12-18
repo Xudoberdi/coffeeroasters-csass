@@ -1,0 +1,410 @@
+.plan {
+  margin-bottom: 15.5rem;
+  &__container {
+    background-image: url(../images/jpg/plan-bg.png);
+    border-radius: 10px;
+    width: 100%;
+    background-repeat: no-repeat;
+
+    @include responsive(table) {
+      background-position: center right 70%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    @include responsive(m-phone) {
+      background-position: center right 45%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &__group {
+    padding : {
+      top: 13.7rem;
+      left: 8.5rem;
+      bottom: 13rem;
+    }
+    @include responsive(phone) {
+      padding : {
+        top: 11.1rem;
+        left: 8.5rem;
+        bottom: 8.7rem;
+        right: 8.5rem;
+      }
+    }
+    @include responsive(m-phone) {
+      padding : {
+        top: 11.1rem;
+        left: 2.5rem;
+        bottom: 8.7rem;
+        right: 2.5rem;
+      }
+    }
+  }
+  &__title {
+    font-family: $title-fonts;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 7.2rem;
+    line-height: 1.2;
+    color: #fefcf7;
+    margin: 0;
+    @include responsive(phone) {
+      text-align: center;
+      font-size: 2.8rem;
+      line-height: 1;
+    }
+  }
+  &__info {
+    font-family: $text-fonts;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.62;
+    color: #fefcf7;
+    width: 44.5rem;
+    margin-top: 2.4rem;
+    @include responsive(phone) {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+.number {
+}
+
+.number__container {
+  background: $choose-bg;
+  padding-top: 14rem;
+  padding-bottom: 11rem;
+  border-radius: 10px;
+  position: relative;
+}
+.plan__line {
+  position: absolute;
+  width: 749px;
+  height: 1px;
+  border: 1px solid #fdd6ba;
+  top: 15.5rem;
+  left: 10rem;
+  @include responsive(desktop) {
+    width: 610px;
+  }
+  @include responsive(table) {
+    width: 457px;
+    left: 5.7rem;
+  }
+  @include responsive(phone) {
+    display: none;
+  }
+}
+.number__list {
+  padding-left: 8.5rem;
+  display: flex;
+  gap: 9rem;
+  @include responsive(desktop) {
+    gap: 5rem;
+  }
+  @include responsive(table) {
+    gap: 1rem;
+    padding-left: 4rem;
+  }
+  @include responsive(phone) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+.number__list .circle {
+  width: 31px;
+  height: 31px;
+  border: 2px solid #0e8784;
+  display: block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+  @include responsive(phone) {
+    display: none;
+  }
+}
+
+.number__title {
+  font-family: $title-fonts;
+  color: $pale-orange-color;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1;
+  margin: 0;
+  padding-top: 6.5rem;
+  @include responsive(phone) {
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+}
+.number__subtitle {
+  font-family: $title-fonts;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 1.12;
+  color: #fefcf7;
+  width: 22rem;
+  padding-top: 3.8rem;
+  margin: 0;
+  @include responsive(desktop) {
+    font-size: 2.8rem;
+    margin-bottom: 2.4rem;
+  }
+  @include responsive(phone) {
+    text-align: center;
+    width: 100%;
+    padding: 0 2.5rem;
+  }
+}
+.number__info {
+  width: 28.5rem;
+  font-family: $text-fonts;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.62;
+  color: #fefcf7;
+  padding-top: 4.2rem;
+  margin: 0;
+  @include responsive(desktop) {
+    width: 25rem;
+  }
+  @include responsive(table) {
+    width: 22rem;
+    font-size: 1.5rem;
+  }
+  @include responsive(phone) {
+    text-align: center;
+    width: 100%;
+    padding: 0 2.5rem;
+  }
+}
+.choose {
+  padding-top: 16rem;
+}
+.choose__container {
+  display: flex;
+  @include responsive(desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2.4rem;
+  }
+}
+.choose__left {
+  padding-left: 8.5rem;
+  margin-right: 12.5rem;
+  @include responsive(desktop) {
+    display: none;
+  }
+}
+.choose__left-list {
+}
+.choose__left-item {
+  display: flex;
+  width: 255px;
+  gap: 2.8rem;
+}
+hr {
+  color: $option-default-color;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  height: 1px;
+  margin: 2.4rem 0rem;
+  width: 255px;
+}
+.choose__left-number {
+  font-family: $title-fonts;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 1.33;
+  color: #333d4b;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.choose__left-info {
+  font-family: $title-fonts;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 1.33;
+  color: #333d4b;
+  transition: all 0.5s;
+}
+.choose__right {
+  padding-bottom: 16rem;
+  @include responsive(table) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.choose__right-group {
+  @include responsive(table) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.choose__right-title {
+  font-family: $title-fonts;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 1.2;
+  color: #83888f;
+  margin-bottom: 5.6rem;
+  @include responsive(table) {
+    font-size: 3.2rem;
+    padding-top: 10rem;
+  }
+}
+.choose__right-title::after {
+  content: url("../images/svg/Path.svg");
+  position: relative;
+  left: 6rem;
+  bottom: 5px;
+}
+.choose__right-list {
+  display: grid;
+  width: 75.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(22.8rem, 1fr));
+  gap: 2rem;
+  @include responsive(table) {
+    gap: 1rem;
+    width: 100%;
+  }
+  @include responsive(table) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.choose__right-item {
+  width: 228px;
+  height: 250px;
+  background: #f4f1eb;
+  border-radius: 8px;
+  padding-top: 3.2rem;
+  padding-left: 2.8rem;
+  padding-right: 2.5rem;
+  margin-bottom: 8.8rem;
+  display: block;
+  transition: all 0.5s;
+  @include responsive(table) {
+    width: 33rem;
+    height: 15rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.choose__right-item-title {
+  font-family: $title-fonts;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #333d4b;
+  margin-bottom: 2.4rem;
+}
+.choose__right-item-info {
+  font-family: $text-fonts;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #333d4b;
+}
+.choose__right-footer {
+  @include responsive(table) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.choose__right-footer-up {
+  background: #2c343e;
+  border-radius: 10px;
+  width: 730px;
+  height: 208px;
+  padding-left: 6.4rem;
+  padding-top: 3rem;
+  padding-right: 6.4rem;
+  margin-bottom: 4rem;
+  @include responsive(table) {
+    width: 100%;
+    height: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+.choose__right-footer-uptitle {
+  font-family: $text-fonts;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  line-height: 1.62;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.choose__right-footer-info {
+  font-family: $title-fonts;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.67;
+}
+.green {
+  color: #0e8784;
+}
+.choose__link {
+  font-family: $title-fonts;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #ffffff;
+  background: #0e8784;
+  border-radius: 6px;
+  padding: 1.6rem 3.3rem;
+  position: relative;
+  left: 45.5rem;
+  @include responsive(table) {
+    left: 0;
+    position: static;
+  }
+}
+.choose__link:hover {
+  opacity: 0.5;
+}
+.choose__right-item:hover {
+  background: #0e8784;
+}
+
+.choose__right-item:active {
+  background: #fdd6ba;
+}
+.choose__left-info:hover {
+  opacity: 0.5;
+}
+.choose__left-number:hover {
+  opacity: 0.5;
+}
