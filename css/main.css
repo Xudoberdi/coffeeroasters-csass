@@ -1469,7 +1469,7 @@ ul, ol {
 }
 
 .choose__container {
-  display: flex;
+  display: block;
 }
 @media only screen and (max-width: 1200px) {
   .choose__container {
